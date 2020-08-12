@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            text-align: center;
+            margin-top: 300px;
+        }
+        
+        input {
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Do you love me?</h1>
+        <button onclick="alert('<3-<3<3-<3<3-<3<3-<3')">YESSS</button>
+        <input type="button" value="no" id="no" onmouseover="jump()" style="position: absolute;">
+
+    </div>
+</body>
+
+</html>
+<script>
+    function jump() {
+        let a = Math.round(Math.random() * window.innerHeight);
+        let b = Math.round(Math.random() * window.innerWidth);
+
+        document.getElementById('no').style.left = b + 'px';
+        document.getElementById("no").style.top = a + 'px';
+    }
+</script>
